@@ -4,11 +4,11 @@ ChunkedADNS is a tool to help you resolve an extremely large number of domains (
 I was able to resolve over 2 million domain names in under two hours using a single chunk (i.e. in the worst case)
 
 ####Features:
-#####1. Session Resumption<br/>
+#####1. Session Resumption
 In case something goes wrong and you have to abort ADNS resolution for whatever reason, you can carry on from where you left off the next time you run it
-#####2. Chunked / Distributed Processing <br/>
+#####2. Chunked / Distributed Processing
 Each ADNS input file is split into a number of chunks and each chunk is resolved in parallel using Python Multiprocessing
-#####3. Fine-grained Control [*partially implemented]<br/>
+#####3. Fine-grained Control [*partially implemented]
 You can control the number of chunks you want to use, the size of each and also the intensity of DNS requests (i.e. how many DNS requests are made per second)
 
 
@@ -20,7 +20,7 @@ You can control the number of chunks you want to use, the size of each and also 
 
 #####Usage: 
 ./ChunkedADNS.sh<br/>
-Just run the script without any arguments since it operates in interactive mode. You will be prompted for every input. <br/>
+Just run the script without any arguments since it operates in interactive mode. You will be prompted for every input. 
 The output file ["ADNS_OUTPUT_<date>".csv] will be in the results/ directory. If a domain name could not be resolved, you'll get 'ERR_NOT_RESOLVED' instead of the IP Address
 
 #####Installing the ADNS C library and its Python Wrapper:
